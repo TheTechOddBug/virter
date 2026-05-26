@@ -39,6 +39,7 @@ The container provisioning step can be parameterized using the following configu
   
 
 * `command` is a string array and sets the command to execute in the container (basically `<args>...` in `docker run <image> <args>...`). The items are Go templates.
+* `user` overrides the user the container's command runs as (passed through to the container runtime, equivalent to `docker run --user`). Accepts a numeric uid, `uid:gid`, or a name from the image's `/etc/passwd`. If omitted, the image's default user is used.
 * `copy` can be used to retrieve files from the container after the provisioning has finished. `source` is the file or directory within the container to copy out, and `dest` is the path on the host where the file or directory should be copied to. The `dest` value is a Go template. The destination must be within the current working directory.
 
 In addition, every container binds the following paths:

@@ -560,6 +560,7 @@ func (v *Virter) imageBuildProvisionCommit(ctx context.Context, tools ImageBuild
 				s.Container.Image,
 				s.Container.Env,
 				containerapi.WithCommand(s.Container.Command...),
+				containerapi.WithUser(s.Container.User),
 				containerapi.WithPullConfig(s.Container.Pull.ForContainer()),
 			)
 			err = v.VMExecContainer(ctx, tools.ContainerProvider, vmNames, containerCfg, nil)

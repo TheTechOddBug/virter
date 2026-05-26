@@ -6,7 +6,7 @@ toolchain go1.26.1
 
 require (
 	github.com/BurntSushi/toml v1.6.0
-	github.com/LINBIT/containerapi v0.9.0
+	github.com/LINBIT/containerapi v0.10.0
 	github.com/LINBIT/gosshclient v0.3.1
 	github.com/apparentlymart/go-cidr v1.1.0
 	github.com/digitalocean/go-libvirt v0.0.0-20260217163227-273eaa321819

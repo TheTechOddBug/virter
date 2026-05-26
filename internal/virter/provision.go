@@ -17,11 +17,16 @@ const CurrentProvisionFileVersion = 1
 
 // ProvisionContainerStep is a single provisioning step executed in a container
 type ProvisionContainerStep struct {
-	Image   string                      `toml:"image"`
-	Pull    pullpolicy.PullPolicy       `toml:"pull"`
-	Env     map[string]string           `toml:"env"`
-	Command []string                    `toml:"command"`
-	Copy    *ProvisionContainerCopyStep `toml:"copy"`
+	Image   string                `toml:"image"`
+	Pull    pullpolicy.PullPolicy `toml:"pull"`
+	Env     map[string]string     `toml:"env"`
+	Command []string              `toml:"command"`
+	// User overrides the user the container's command runs as (passed
+	// through to the container runtime, equivalent to `docker run --user`).
+	// Accepts a numeric uid, "uid:gid", or a name from the image's
+	// /etc/passwd. An empty value keeps the image default.
+	User string                      `toml:"user"`
+	Copy *ProvisionContainerCopyStep `toml:"copy"`
 }
 
 type ProvisionContainerCopyStep struct {

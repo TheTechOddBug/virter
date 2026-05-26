@@ -6,6 +6,8 @@ github.com/BurntSushi/toml v1.6.0 h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk
 github.com/BurntSushi/toml v1.6.0/go.mod h1:ukJfTF/6rtPPRCnwkur4qwRxa8vTRFBF0uk2lLoLwho=
 github.com/LINBIT/containerapi v0.9.0 h1:ZplXvxOW1nFFUOHCumPPlI+jcIhdQXgBSpORkrucDgk=
 github.com/LINBIT/containerapi v0.9.0/go.mod h1:eh9iGXw6m/hO8KXtkWiaazGxMlCQqfs4zQ7iWiD0v50=
+github.com/LINBIT/containerapi v0.10.0 h1:pnse7wZOeEOn70Eg1TleBxY5hMun9B7npUitpgwGWTM=
+github.com/LINBIT/containerapi v0.10.0/go.mod h1:eh9iGXw6m/hO8KXtkWiaazGxMlCQqfs4zQ7iWiD0v50=
 github.com/LINBIT/gosshclient v0.3.1 h1:5XM7k1gKL8708LhHyfRDrcDbUVPX6BlIy8K64LxVwws=
 github.com/LINBIT/gosshclient v0.3.1/go.mod h1:sHoqDy3IMxkdYCXSLgJqQeGrp35g6y80NQG0jvSTw/8=
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=

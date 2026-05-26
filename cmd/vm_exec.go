@@ -112,6 +112,7 @@ func execContainer(ctx context.Context, v *virter.Virter, s *virter.ProvisionCon
 		s.Image,
 		s.Env,
 		containerapi.WithCommand(s.Command...),
+		containerapi.WithUser(s.User),
 		containerapi.WithPullConfig(s.Pull.ForContainer()),
 	)
 
